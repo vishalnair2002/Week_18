@@ -5,6 +5,11 @@
         <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
         <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
         <script src="products.js"></script>
+        <script>
+            if ('serviceWorker' in navigator0) {
+                navigator.serviceWorker.register('service-worker.js');
+            };
+        </script>
         <link rel="'manifest" href="petstore.webmanifest">
         <style>
             .product {
